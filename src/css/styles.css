@@ -12,7 +12,46 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 20px;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+.gallery-item {
+  display: block;
+  width: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.image-info {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.loader {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
